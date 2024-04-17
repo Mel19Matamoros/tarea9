@@ -1,0 +1,266 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Insurance For Life | Home :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Trendy Travel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<!-- Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- font-awesome icons -->
+	<!-- //Custom Theme files -->
+	<!-- web-fonts -->
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="agileits-banner">
+		<div class="bnr-agileinfo">
+			<!-- navigation -->
+			<div class="top-nav w3-agiletop">
+				<div class="container">
+					<div class="navbar-header w3llogo">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<h1><a href="index.html">Insurance for Life</a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="w3menu navbar-right">
+							<ul class="nav navbar">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="#about" class="scroll">Nosotros...</a></li>
+								<li><a href="#gallery" class="scroll">Portafolio</a></li>
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-letters="Pages">Contenido</span><span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#team" class="scroll">Nuestro Equipo</a></li>
+										<li><a href="#testi" class="scroll">Comentarios</a></li>
+									</ul>
+								</li>
+								<li><a href="#contact" class="scroll">Contáctenos</a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-- //navigation -->
+			<!-- banner-text -->
+			<div class="banner-w3text">
+				<div class="container">
+					<div class="w3l-agile">
+						<h2>Asegure su <span>Vida</span></h2>
+						<div class="banner-pw3l">
+							<p>Inicie aquí y no olvide a los suyos... </p>
+						</div>
+						<div class="w3lsmore">
+                            <a href="#footer-top" class="button-pipaluk button--inverted"> Cotice aquí</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //banner-text -->
+		</div>
+	</div>
+	
+	<!-- //banner -->
+
+	<!-- newsletter -->
+    <div id="footer-top" class="footer-top">
+        <div class="container">
+            <div class="col-xs-8 agile-leftmk">
+                <h3 class="title-w3-agile">Cotice Aquí su Seguro</h3>
+                <p>Complete las preguntas y presiona Cotizar!</p>
+                <form id="frmCotizador" method="get" class="cotizador">
+
+                    <label class="mainLabel" for="fechaRetiro">1- ¿En qué fecha nació?</label>
+                    <input class="fechas" type="date" name="fNace" id="fechaNace" onchange="calcularEdad()" required="" />
+
+                    <label class="mainLabel" for="rbtG">2- ¿Cuál es su género?</label>
+                    <label class="rbtG"><input class="genero" id="rbtMasc"  type="radio" onchange="cambioG('mas')" name="rbtG" value="mas" checked="checked" /> Hombre</label>
+                    <label class="rbtG"><input class="genero" type="radio" name="rbtG" onchange="cambioG('fem')" value="fem" /> Mujer</label>
+
+                    <label class="mainLabel" for="rbtD">3- ¿Consume algún tipo de droga?</label>
+                    <label class="rbtG"><input id="rbtDrogaSi"  class="droga" type="radio" name="rbtD" value="S" /> Si</label>
+                    <label class="rbtG"><input class="droga" type="radio" name="rbtD" value="N" checked="checked" /> No</label>
+
+                    <label class="mainLabel" id="lblTipoV">4- ¿Padece de alguna enfermedad?</label>
+                    <select class="combos" id="cboEnfermedad" name="cboEnfermedad" required="">
+                        <option value="0" selected=selected>Sin Enfermedades</option>
+                        <option value="0.12">Enfermedad Crónica</option>
+                        <option value="0.25">Enfermedad Degenerativa</option>
+                        <option value="-1">Enfermedad Terminal</option>
+                    </select>
+                    <label class="mainLabel" id="lblMonedas">5- ¿En qué moneda desea cotizar?</label>
+                    <select class="combos" id="cboMonedas" name="cboMonedas" required="">
+                    </select>
+
+
+                    <label class="mainLabel" for="txtMonto">6- ¿Qué monto desea asegurar (en moneda USD)?</label>
+                    <input type="number" name="txtMonto" value="100000" min="100000" max="20000000" step="100000" data-number-to-fixed="2" data-number-stepfactor="100" class="montos" id="txtMonto" required="" />
+
+                    <div class="w3lsmore">
+                        <a onclick="calcularCostoSeguro()" class="button-pipaluk button--inverted">Cotizar</a>
+                    </div>
+
+                   
+
+                </form>
+ <div id="lblCostoSeguro" class="costoSeguro"></div>
+            </div>
+            <div class="col-xs-4 w3l-rightmk">
+                <div class="imagenes">
+                    <img class="imgGeneracion" id="imgGeneracion" src="images/genAlpha.png" height="302" width="180" alt="">
+                    <img class="imgGenero" id="imgGenero" src="images/male.png" height="352" width="230" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- //newsletter -->
+	<!-- footer start here -->
+	<div class="footer-agile">
+		<div class="container">
+			<div class="footer-agilem">
+				<div class="col-sm-8 col-xs-9 copy-w3lsright">
+					<p>© 2023 Trendy Travel. All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+				</div>
+				<div class="col-sm-4 col-xs-3 social-w3licon">
+					<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+					<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer end here -->
+
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- Progressive-Effects-Animation-JavaScript -->
+	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+	<!-- //Progressive-Effects-Animation-JavaScript -->
+	<!-- responsiveslides -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!-- //responsiveslides -->
+	<!-- simple-lightbox -->
+	<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
+	<script>
+		$(function () {
+			var gallery = $('.agileinfo-gallery-row a').simpleLightbox({
+				navText: ['&lsaquo;', '&rsaquo;']
+			});
+		});
+	</script>
+	<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<!-- Light-box css -->
+	<!-- //simple-lightbox -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Flexslider-js -->
+	<script type="text/javascript">
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 1,
+				animationSpeed: 1000,
+				autoPlay: false,
+				autoPlaySpeed: 5000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 1
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 1
+					}
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<!-- //Flexslider-js -->
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/cotizador.js"></script>
+</body>
+
+</html>
